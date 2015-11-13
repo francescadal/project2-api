@@ -6,9 +6,11 @@
 ```
 curl --include --request POST --header "Content-Type: application/json" -d '{
   "credentials": {
-    "email": "an@example.email",
+    "email": "t@example.email",
+    "status": "an example status",
     "password": "an example password",
-    "password_confirmation": "an example password"
+    "password_confirmation": "an example password",
+    "birthday": "date"
   }
 }' http://localhost:3000/register
 ```
