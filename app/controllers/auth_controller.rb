@@ -37,8 +37,7 @@ class AuthController < ApplicationController
     params.require(:credentials).permit(:email,
                                         :status,
                                         :password,
-                                        :password_confirmation,
-                                        :birthday
+                                        :password_confirmation
                                               )
   end
 

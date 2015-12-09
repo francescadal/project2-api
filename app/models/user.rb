@@ -1,6 +1,6 @@
 #
 class User < ActiveRecord::Base
   include Authentication
-
-  has_many :books
+  has_secure_password
+  has_many :comments
 end
