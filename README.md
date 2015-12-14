@@ -20,11 +20,14 @@ curl --include --request POST --header "Content-Type: application/json" -d '{
 ```
 curl --request POST --header "Content-Type: application/json" -d '{
   "credentials": {
-    "email": "an@example.email",
-    "password": "an example password"
+    "email": "fran@example.com",
+    "password": "pw"
   }
 }' http://localhost:3000/login
 ```
+
+593f4e6ef055bfd99075340242cdc331
+
 
 ## Logout
 
@@ -47,6 +50,8 @@ curl --header "Authorization: Token token=c017d611187e3350baffc52d35a4df69" http
 ```
 curl --header "Authorization: Token token=c017d611187e3350baffc52d35a4df69" http://localhost:3000/users
 ```
+
+curl --header "Authorization: Token token=593f4e6ef055bfd99075340242cdc331" http://localhost:3000/comments
 
 **OR**
 
