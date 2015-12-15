@@ -14,7 +14,9 @@ Rails.application.routes.draw do
 
   get '/comments/new' => 'comments#new'
 
-  delete '/logout/:id' => 'auth#logout'
+  delete '/comments/:id' => 'comments#destroy'
+
+  delete '/logout/:id' => 'sessions#destroy'
 
   resources :comments
 

@@ -20,10 +20,17 @@ class CommentsController < ApplicationController
     end
   end
 
-    def show
+  def show
     @comment = Comment.find(params[:id])
 
     render json: @comments
+  end
+
+
+  def destroy
+    @comment = Comment.find(params[:id])
+
+    @comment.destroy
   end
 
   private
