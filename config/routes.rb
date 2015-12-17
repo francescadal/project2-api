@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   get '/comments/new' => 'comments#new'
 
-  delete '/comments/:id' => 'comments#destroy'
+  delete '/comments' => 'comments#delete'
 
   delete '/logout/:id' => 'sessions#destroy'
 
